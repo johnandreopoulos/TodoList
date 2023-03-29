@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+  <div class="app">
+    <div class="task-header">
+      <h1 class="task-header-title"></h1>
+      <div class="task-tools">
+        <div class="task-count"></div>
+        <div class="task-filters">
+          <button class="task-filter is-active">All</button>
+          <button class="task-filter" data-param="completed" data-value="false">Active</button>
+          <button class="task-filter" data-param="completed" data-value="true">Completed</button>
+        </div>
+      </div>
+      <form class="task-form"><input class="task-input" placeholder="Add a new task..." autofocus="true"><button class="task-button">Add Task</button></form>
+    </div>
+    <div class="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
